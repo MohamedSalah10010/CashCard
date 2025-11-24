@@ -1,7 +1,7 @@
 package com.learn.cashcard;
 
-import org.springframework.stereotype.Component;
 
+import org.springframework.data.annotation.Id;
 
- public record  CashCard (long id, double amount) {
-    }
+record CashCard(@Id Long id, Double amount) {
+}
